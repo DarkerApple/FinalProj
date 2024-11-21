@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6학년 5반 그림판</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gluten:wght@100..900&family=Jua&family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        #drawingCanvas {
+            border: 1px solid #000;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="header">6학년 5반 그림판</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="publicPostsLink">공개 게시물</a></li>
+                <li><a href="comments.html" id="commentsLink">자유 게시판</a></li>
+            </ul>
+        </nav>
+        <select id="themeSelector">
+            <option value="light">라이트 모드</option>
+            <option value="dark">다크 모드</option>
+            <option value="sepia">세피아 모드</option>
+            <option value="blue">블루 모드</option>
+        </select>
+    </header>
+    <main>
+        <div id="drawingControls">
+            <button id="clearButton">지우기</button>
+            <input type="color" id="colorPicker" value="#000000">
+            <input type="range" id="brushSize" min="1" max="50" value="5">
+        </div>
+        <canvas id="drawingCanvas" width="800" height="600"></canvas>
+    </main>
+    <script src="canvas.js"></script>
+</body>
+</html>

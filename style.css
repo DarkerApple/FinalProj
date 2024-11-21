@@ -1,0 +1,381 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light theme (default) */
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+#header {
+  font-family: "Jua", sans-serif;
+  font-size: 50px;
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.person-section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 40%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.person-section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.content {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 1rem;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-theme .person-section {
+  background-color: #444444;
+  border-color: #555555;
+}
+
+body.dark-theme #header {
+  color: #3c3c3c !important;
+}
+
+body.dark-theme #heading {
+  color: #6b6b6b !important;
+}
+
+/* Sepia theme */
+body.sepia-theme {
+  background-color: #f1e7d0;
+  color: #704214;
+}
+
+body.sepia-theme .person-section {
+  background-color: #faf0e6;
+  border-color: #d0c8b0;
+}
+
+body.sepia-theme #heading {
+  color: #ab8763 !important;
+}
+
+/* Blue theme */
+body.blue-theme {
+  background-color: #e6f2ff;
+  color: #00366d;
+}
+
+body.blue-theme .person-section {
+  background-color: #f0f8ff;
+  border-color: #b3d9ff;
+}
+
+body.blue-theme #heading {
+  color: #98abc3 !important;
+}
+
+/* Theme-specific header styles */
+body.dark-theme #header {
+  color: #ffffff;
+}
+
+body.sepia-theme #header {
+  color: #8b4513;
+}
+
+body.blue-theme #header {
+  color: #0066cc;
+}
+
+/* Theme selector styles */
+#themeSelector {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 100px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .person-section {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .person-section {
+    width: 100%;
+  }
+}
+
+.secHeader {
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.content {
+  font-family: 'Do Hyeon', sans-serif !important;
+  font-size: 16px;
+  font-weight: 100;
+
+}
+
+#likeButton {
+  font-family: 'Do Hyeon', sans-serif;
+  border-radius: 5px;
+  font-size: 13px;
+  border-color: #66a8ff;
+  ;
+  color: #004ca3;
+}
+
+#likeCount {
+  color: #004ca3;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+#likeButton.liked {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border-color: #ff6161;
+}
+
+#likeCount.liked {
+  color: #ff6666;
+}
+
+/* Add these styles to your existing CSS */
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#commentForm {
+  margin-bottom: 20px;
+}
+
+#commentText {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.comment small {
+  display: block;
+  color: #666;
+  margin-top: 5px;
+}
+
+.comment button {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 20px;
+}
+
+li {
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+textarea {
+  font-family: 'Do Hyeon', sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  border-style: none;
+  border-radius: 2px;
+}
+
+
+#submitComment {
+  font-family: 'Do hyeon', sans-serif;
+  padding: 10px;
+  background-color: #bdffbd;
+  color: #2b2b2b;
+  font-size: 16px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+li {
+  font-size: 16px;
+}
+
+#header.p {
+  font-size: 12px;
+  padding: 10px !important;
+
+}
+
+#heading {
+  font-size: 20px;
+  font-style: italic;
+  color: #6b6b6b;
+}
+
+
+/* Add these styles to your existing CSS */
+
+.comment {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.comment small {
+  display: block;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.comment button {
+  background-color: #6695c2;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.like-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+.like-count {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+/* Add these to your existing CSS */
+
+@keyframes celebrate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.celebrate {
+    animation: celebrate 0.5s ease-in-out;
+    transition: background-color 0.5s;
+}
+
+.celebrate-100 { background-color: gold !important; }
+.celebrate-200 { background-color: silver !important; }
+.celebrate-300 { background-color: #cd7f32 !important; } /* bronze */
+.celebrate-400 { background-color: #e5e4e2 !important; } /* platinum */
+.celebrate-500 { background-color: #50C878 !important; } /* emerald */
+.celebrate-600 { background-color: #b9f2ff !important; } /* diamond */
+.celebrate-700 { background-color: #daa0a0 !important; } /* purple */
+.celebrate-800 { background-color: #40E0D0 !important; } /* turquoise */
+.celebrate-900 { background-color: #648d90 !important; } /* hot pink */
+
+.celebrate::after {
+    content: '🎉';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 24px;
+}
+
+#fullScreenCelebration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+#fullScreenCelebration .content {
+    text-align: center;
+    color: white;
+}
+
+#fullScreenCelebration .like-icon {
+    font-size: 150px;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+
+
+#clearButton {
+  border-radius: 10px;
+  border-style: solid;
+  font-family: "Do Hyeon";
+  border-width: 1px;
+  width: 64px;
+  height: 36px;
+  font-size: 20px;
+}

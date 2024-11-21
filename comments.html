@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>댓글 - 6학년 5반 정보통</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gluten:wght@100..900&family=Jua&family=Poor+Story&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body onload='applyTheme()'>
+    <header>
+        <h1 id="header">자유게시판</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">홈으로</a></li>
+                <li><a href="canvas.html" id="publicPostsLink">캔버스</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="commentsSection">
+        <form id="commentForm">
+            <textarea id="commentText" rows="4" placeholder="댓글을 입력하세요"></textarea>
+            <button type="submit" id="submitComment">댓글 작성</button>
+        </form>
+        <div id="commentsList"></div>
+    </main>
+    <script src="script.js"></script>
+    <script src="comments.js"></script>
+</body>
+</html>
