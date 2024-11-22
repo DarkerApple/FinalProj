@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         commentElement.classList.add('comment');
         commentElement.setAttribute('data-comment-id', comment.id);
         commentElement.innerHTML = `
-            <p>${comment.text}</p>
+            <p id="commentText">${comment.text}</p>
             <small>${comment.date}</small>
             <button onclick='deleteComment(${comment.id})'>삭제</button>
             <button class="like-button" onclick='likeComment(${comment.id})'>
