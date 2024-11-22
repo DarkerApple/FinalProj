@@ -327,7 +327,7 @@ li {
     transition: background-color 0.5s;
 }
 
-.celebrate-100 { background-color: gold !important; }
+.celebrate-100 { background-color: gold !important; content:"fuck";}
 .celebrate-200 { background-color: silver !important; }
 .celebrate-300 { background-color: #cd7f32 !important; } /* bronze */
 .celebrate-400 { background-color: #e5e4e2 !important; } /* platinum */
@@ -335,7 +335,18 @@ li {
 .celebrate-600 { background-color: #b9f2ff !important; } /* diamond */
 .celebrate-700 { background-color: #daa0a0 !important; } /* purple */
 .celebrate-800 { background-color: #40E0D0 !important; } /* turquoise */
-.celebrate-900 { background-color: #648d90 !important; } /* hot pink */
+.celebrate-900 { background-color: #ff0000 !important; } /* hot pink */
+.celebrate-1000 { background-color: #00eeff !important; } /* hot pink */
+.celebrate-1100 { background-color: #ffffff !important; } /* hot pink */
+.celebrate-1200 { background-color: #002fff !important; } /* hot pink */
+.celebrate-1300 { background-color: #001f21 !important; text-decoration: wavy;} /* hot pink */
+.celebrate-1400 { background-color: #648d90 !important; } /* hot pink */
+.celebrate-1500 { background-color: #648d90 !important; } /* hot pink */
+.celebrate-1600 { background-color: #648d90 !important; } /* hot pink */
+.celebrate-1700 { background-color: #648d90 !important; } /* hot pink */
+.celebrate-1800 { background-color: #648d90 !important; } /* hot pink */
+.celebrate-1900 { background-color: #648d90 !important; } /* hot pink */
+.celebrate-2000 { background-color: #648d90 !important; } /* hot pink */
 
 .celebrate::after {
     content: '🎉';

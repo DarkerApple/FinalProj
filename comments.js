@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="like-count">${comment.likes}</span>
             </button>`;
         
-        if (comment.likes >= 100 && comment.likes < 1000) {
+        if (comment.likes >= 100 && comment.likes < 10000) {
             const celebrationLevel = Math.floor(comment.likes / 100);
             commentElement.classList.add(`celebrate-${celebrationLevel * 100}`);
         }
