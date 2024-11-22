@@ -110,6 +110,10 @@ body.dark-theme #header {
   color: #ffffff;
 }
 
+body.dark-theme #commentslist {
+  color: #2b2b2b;
+}
+
 body.sepia-theme #header {
   color: #8b4513;
 }
