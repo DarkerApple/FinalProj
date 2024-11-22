@@ -327,7 +327,7 @@ li {
     transition: background-color 0.5s;
 }
 
-.celebrate-100 { background-color: gold !important; content:"fuck";}
+.celebrate-100 { background-color: gold !important; content:"yo";}
 .celebrate-200 { background-color: silver !important; }
 .celebrate-300 { background-color: #cd7f32 !important; } /* bronze */
 .celebrate-400 { background-color: #e5e4e2 !important; } /* platinum */
